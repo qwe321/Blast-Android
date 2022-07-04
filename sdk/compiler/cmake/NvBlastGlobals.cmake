@@ -26,7 +26,7 @@ SET(PUBLIC_FILES
 	${GLOBALS_DIR}/include/NvBlastDebugRender.h
 )
 
-ADD_LIBRARY(NvBlastGlobals SHARED 
+ADD_LIBRARY(NvBlastGlobals STATIC 
 	${COMMON_FILES}
 	${SOURCE_FILES}
 	${PUBLIC_FILES}

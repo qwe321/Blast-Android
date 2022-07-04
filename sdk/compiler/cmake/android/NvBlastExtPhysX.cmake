@@ -1,5 +1,5 @@
 #
-# Build NvBlast Linux
+# Build NvBlast Android
 #
 
 SET(BLASTEXT_PLATFORM_COMMON_FILES
@@ -18,7 +18,7 @@ SET(BLASTEXT_COMPILE_DEFS
 	$<$<CONFIG:release>:${BLAST_SLN_RELEASE_COMPILE_DEFS}>
 )
 
-SET(BLASTEXT_PHYSX_LIBTYPE SHARED)
+SET(BLASTEXT_PHYSX_LIBTYPE STATIC)
 
 #-Wno-maybe-uninitialized doesn't work on Clang
 IF (NOT "${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")

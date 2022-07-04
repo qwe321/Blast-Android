@@ -1,8 +1,8 @@
 #
-# Build NvBlast Linux
+# Build NvBlast Android
 #
 
-SET(BLASTTK_LIBTYPE SHARED)
+SET(BLASTTK_LIBTYPE STATIC)
 
 IF ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
 	SET(BLASTEXTSTRESS_PLATFORM_COMPILE_OPTIONS "-Wno-return-type-c-linkage" "-pedantic")

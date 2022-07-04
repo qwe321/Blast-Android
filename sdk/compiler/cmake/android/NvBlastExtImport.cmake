@@ -1,5 +1,5 @@
 #
-# Build NvBlast Linux
+# Build NvBlast Android
 #
 
 SET(BLASTEXT_PLATFORM_COMMON_FILES

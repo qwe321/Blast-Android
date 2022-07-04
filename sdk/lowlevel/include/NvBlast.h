@@ -32,6 +32,8 @@
 
 #include "NvBlastTypes.h"
 
+extern "C"
+{
 
 ///////////////////////////////////////////////////////////////////////////////
 //	NvBlastAsset functions
@@ -886,7 +888,7 @@ Convert a tick value from NvBlastTimers to seconds.
 \return the seconds correposnding to the input tick value.
 */
 NVBLAST_API double NvBlastTicksToSeconds(int64_t ticks);
-
+}
 ///@} End NvBlastTimers functions and helpers
 
 

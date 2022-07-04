@@ -1,5 +1,5 @@
 #
-# Build NvBlast Linux
+# Build NvBlast Android
 #
 
 SET(BLASTEXT_PLATFORM_COMMON_FILES
@@ -18,7 +18,7 @@ SET(BLASTEXT_COMPILE_DEFS
 	$<$<CONFIG:release>:${BLAST_SLN_RELEASE_COMPILE_DEFS}>
 )
 
-SET(BLAST_EXT_SHARED_LIB_TYPE SHARED)
+SET(BLAST_EXT_SHARED_LIB_TYPE STATIC)
 
 #Exceptions are needed by boost
 #This option doesn't work on Clang
